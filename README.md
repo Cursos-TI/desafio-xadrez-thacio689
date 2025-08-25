@@ -1,75 +1,72 @@
-# ⚠️ Importante!!!
-Você pode escolher qualquer um dos desafios para desenvolver. Sinta-se à vontade para começar pelo desafio que mais lhe interessa.
+# Desafio Xadrez – Nível Novato
 
-# Desafio de Xadrez - MateCheck
+## 🏆 Sobre o Projeto
+Este projeto foi desenvolvido para o desafio da disciplina MateCheck, simulando movimentações básicas de peças de Xadrez.  
+O objetivo é avaliar o uso de **estruturas de repetição** e exibir a movimentação de cada peça no console de forma clara e organizada.
 
-Bem-vindo ao desafio de Xadrez da MateCheck! Este projeto tem como objetivo testar e determinar os limites de utilização do código dentro do jogo utilizando estruturas de repetição e funções avançadas.
+## 📌 Objetivos
+- Simular a movimentação do **Bispo** (diagonal superior direita).  
+- Simular a movimentação da **Torre** (para a direita).  
+- Simular a movimentação da **Rainha** (para a esquerda).  
+- Utilizar **estruturas de repetição** (`for`) para todas as peças.  
+- Demonstrar saídas claras com a **direção da peça**.
 
-## Níveis do Desafio
+## 🖥️ Como Rodar o Código
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/desafio-xadrez-thacio689.git
+````
 
-### 🏅 Nível Novato
+2. Compile o código (C):
 
-A equipe de testes da MateCheck recebeu uma solicitação para determinar os limites de utilização do código dentro do jogo. Para isso, a equipe de programação solicitou o envio de blocos de código contendo loops (estruturas de repetição) para avaliação de desempenho e possibilidades de aplicação.
+```bash
+gcc xadrez.c -o xadrez
+```
 
-**Movimentação das Peças:**
-- Bispo: 5 casas na diagonal superior direita
-- Torre: 5 casas para a direita
-- Rainha: 8 casas para a esquerda
+3. Execute o programa:
 
-No jogo, apenas possuímos movimentação para quatro direções, mas o Bispo se mexe na diagonal. Com isso, foi adicionada uma condição para movimentação dessa peça, em que, para movê-lo, utilizamos o comando `printf` e, em seu valor, colocamos a direção usando a combinação de direções básicas. 
+```bash
+./xadrez
+```
 
-**Requisitos Funcionais:**
-1. **Entrada de Dados:**
-   - Os valores necessários devem ser inseridos manualmente a partir de variáveis dentro do código.
-   - Será permitido o uso de constantes para facilitar a escrita do código e evitar repetição de valores.
-2. **Estruturas de Repetição:**
-   - Os códigos precisam ser desenvolvidos utilizando estruturas de repetição.
-3. **Saída de Dados:**
-   - O sistema deve exibir os resultados de cada procedimento de forma clara e legível.
+> Se o código for em Python, basta executar `python xadrez.py`.
 
-**Requisitos Não Funcionais:**
-1. **Performance:**
-   - O sistema deve executar os cálculos e apresentar os resultados sem atrasos perceptíveis.
-2. **Documentação:**
-   - O código deve ser bem documentado, incluindo comentários detalhados sobre a função de cada parte do código.
-3. **Manutenibilidade:**
-   - O código deve ser escrito de forma clara, empregando nomes de variáveis que permitam o fácil entendimento.
+## 💡 Exemplo de Saída
 
-**Instruções Detalhadas:**
-1. **Entrada de Dados:**
-   - Inclua a biblioteca padrão de entrada e saída no início do seu programa.
-   - Declare variáveis constantes para definir os valores a serem comparados dentro das estruturas condicionais.
-2. **Estruturas de Repetição:**
-   - Utilize cada uma das diferentes estruturas de repetição apresentadas.
-3. **Saída:**
-   - As saídas deverão ser mostradas de forma clara e organizada, com a direção da peça.
+```
+Movimento do Bispo:
+Diagonal Superior Direita - Passo 1
+Diagonal Superior Direita - Passo 2
+Diagonal Superior Direita - Passo 3
+Diagonal Superior Direita - Passo 4
+Diagonal Superior Direita - Passo 5
 
-**Nomenclatura:**
+Movimento da Torre:
+Direita - Passo 1
+Direita - Passo 2
+Direita - Passo 3
+Direita - Passo 4
+Direita - Passo 5
 
-printf("Cima\n");
-printf("Baixo\n");
-printf("Esquerda\n");
-printf("Direita\n");
+Movimento da Rainha:
+Esquerda - Passo 1
+Esquerda - Passo 2
+Esquerda - Passo 3
+Esquerda - Passo 4
+Esquerda - Passo 5
+Esquerda - Passo 6
+Esquerda - Passo 7
+Esquerda - Passo 8
+```
 
-### 🏅 Nível Aventureiro
-Agora que já conseguimos mover as peças mais simples usando loops, os desenvolvedores pediram para elaborar os loops de outra forma. Para o desafio, moveremos o cavalo, que possui sua movimentação em L. O cavalo deve se movimentar para baixo e para a esquerda, usando pelo menos duas estruturas de repetição: uma deve ser for e a outra pode ser while ou do-while.
+## 📚 Tecnologias Utilizadas
 
-**Movimentação do Cavalo:**
+* Linguagem C
+* Estruturas de repetição (`for`)
+* Funções básicas de entrada/saída (`printf`)
 
-Mover o cavalo em L utilizando loops aninhados.
-Obs: É obrigatório o uso de loops aninhados.
+## 📌 Observações
 
-### 🥇 Nível Mestre
-Para o desafio final, as peças que utilizam loops simples terão seus códigos trocados por **funções recursivas**, e a movimentação do cavalo utilizará loops com variáveis múltiplas e/ou condições múltiplas, permitindo o uso de continue e break.
+* Código comentado para facilitar entendimento e manutenção.
+* Estrutura preparada para futuras expansões do desafio.
 
-**Movimentação das Peças:**
-
-**Bispo**: 5 casas na diagonal direita para cima
-**Torre**: 5 casas para a direita
-**Rainha**: 8 casas para a esquerda
-**Cavalo**: 1 vez em L para cima à direita
-Obs: É obrigatório o uso de loops aninhados na movimentação do bispo e funções recursivas.
-
-Ao concluir este desafio, você terá um conhecimento mais profundo de estruturas complexas e elaboradas, amplamente utilizadas no mercado de trabalho. Boa sorte e boa programação!
-
-Equipe de Ensino - MateCheck
